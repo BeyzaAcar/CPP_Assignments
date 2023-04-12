@@ -1,0 +1,29 @@
+hello teacher, instead of adding too many comment lines to my code, I thought I would put a readme file again.
+
+In my record file it stores the movement of the last tetromino and how much it moves in total.
+
+Like my code last time it also includes overlap_control function, this function adds the block to the board certainly if there is an overlapping block while scrolling down.
+
+There is a block_letter in classes because I keep the type (ie letter) of that tetromino in a variable and fill that tetromino with x so that the last added tetromino is different from the others. for example like this:
+
+(To make it more understandable to you, I replaced spaces with dots and add spaces between letters) !!!!
+the actual tetromino :      Tetromino objects outside the Tetromino class (last_block):  
+	
+	. . . .                        . . . .  
+	. . . .                        . . . .
+	O O . .                        x x . . 
+	O O . .                        x x . .
+
+
+
+Thus, the last added block on the board does not have a chance to be confused and the downward movement continues. As soon as it conflicts, it stops and the xs are replaced with the char in the block_letter variable that we have stored before.
+e.g :
+
+BLOCK_LETTER = 'o'
+
+LAST_BLOCK =    . . . . 
+                . . . . 
+                x x . . 
+                x x . . 
+               
+certain_merge() replaced x s with block_letter which equals to 'o' 

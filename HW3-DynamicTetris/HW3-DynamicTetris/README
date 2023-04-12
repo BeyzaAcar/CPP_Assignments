@@ -1,0 +1,49 @@
+hocam oncelikle xlerden bahsedeyim, board dizisinde kalıcı olarak yazılmış blokları harflerle 
+yerleştiriyorum ama current blok daha yerleşmemişken, onun o an yerleştirildiğinin anlaşılması
+için bloktaki harfler yerine x lerle yerleştiriyorum yani örneğin l bloğunun normal hali ve 
+x li hali şöyle:(noktaların boşluk olduğunu farz edin)
+
+....
+L...
+L...
+LL..	
+
+....
+X...
+X...
+XX..	
+
+ama bunun kullanıcı tarafından bilinmemesi gerektiğinden print fonksiyonum bu x lerin aslında l
+harfi olduğu bilgisini parametre olarak alıp x leri l olarak bastırıyor.
+
+kodumun bir sıkıntısı tetromino bloğunun ortadan değil en soldan başlaması, diğer türlüsünde çok zorlandım yetiştiremedim hocam. 
+
+cakisma kontrol ve bosluk silme fonksiyonlarım geçen ödevimle aynı işlemi yapıyor, bloğu aşağı indirirken çakışıp çakışmadığı sürekli kontrol ediliyor, çakıştığı an x ler l ye donduruluyor ve move fonksiyonu sonlanıyor. bosluk silme ise şu işe yarıyor, ben dondurme fonksiyonunu daha kolay yapmak adına bütün bloklarımı 4 e 4 lük dizide tutuyorum bu yüzden donduruldugunde solda ve asagilarda bosluk kalıyor örneğin: (yine noktaların boşluk olduğunu farz edin hocam)
+
+....
+....
+TTT.
+.T..
+
+iki kere saga döndürüldüğünde şöyle oluyor
+
+..T.
+.TTT
+....
+....
+
+ama ben bunun şöyle olmasını istiyordum
+
+....
+....
+.T..
+TTT.
+
+bu yüzden soldaki ve sağdaki boşlukları siliyorum bosluk_silme fonksiyonumla
+
+son olarak make komutu ilk önce driver2 yi daha sonra ondan quit ile çıktığınızda driver1 i çalıştırıyor ama driver1 bazen çalışmıyor boş board bastırıyor, bayağı uğraştım sebebini çözemedim kusura bakmayın hocam
+
+:)))
+
+
+
